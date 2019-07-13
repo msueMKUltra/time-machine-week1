@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/time-machine-week1/static/css/main.2cce8147.chunk.css",
+    "main.js": "/time-machine-week1/static/js/main.7e278ea5.chunk.js",
+    "main.js.map": "/time-machine-week1/static/js/main.7e278ea5.chunk.js.map",
+    "runtime~main.js": "/time-machine-week1/static/js/runtime~main.4b965ae9.js",
+    "runtime~main.js.map": "/time-machine-week1/static/js/runtime~main.4b965ae9.js.map",
+    "static/js/2.b41502e9.chunk.js": "/time-machine-week1/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/time-machine-week1/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/time-machine-week1/index.html",
+    "precache-manifest.a492d080fb9180e6f7abe436ba071770.js": "/time-machine-week1/precache-manifest.a492d080fb9180e6f7abe436ba071770.js",
+    "service-worker.js": "/time-machine-week1/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/time-machine-week1/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/time-machine-week1/static/media/logo.5d5d9eef.svg"
+  }
+}
