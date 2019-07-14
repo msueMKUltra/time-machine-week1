@@ -1,0 +1,210 @@
+$width: 1024px
+$height: 768px
+  
+.roller-container 
+  position: relative
+  width: $width
+  height: $height
+  &.roller-idling
+    background: linear-gradient(37deg, #000 0%, #5c5c5c 100%)
+    .roller-count-down-btn
+      box-shadow: 0 0 12px 4px #fff
+    .roller-now-card
+      background-color: #878787
+    .roller-clock-status
+      color: #000000
+    .roller-clock-time
+      color: #dddddd
+      background: linear-gradient(37deg, #000 0%, #5c5c5c 100%)
+  &.roller-working
+    background: linear-gradient(37deg, #eb6356 0%, #e99a6b 100%)
+    .roller-count-down-btn
+      box-shadow: 0 0 12px 4px #743c37
+    .roller-now-card
+      background-color: #eb6356
+    .roller-clock-status
+      color: #3d0f0b
+    .roller-clock-time
+      color: #eb6356
+      background: linear-gradient(37deg, #753c37  0%, #3d0f0b 100%)
+  &.roller-resting
+    background: linear-gradient(37deg, #4743db 0%, #56d1eb 100%)
+    .roller-count-down-btn
+      box-shadow: 0 0 12px 4px #26216f
+    .roller-now-card
+      background-color: #554eb7
+    .roller-clock-status
+      color: #26216f
+    .roller-clock-time
+      color: #95b5e0
+      background: linear-gradient(37deg, #445784 0%, #26216f 100%)
+  .roller-title
+    position: relative
+    z-index: 1
+    margin: 0
+    font-size: 48px
+  .roller-clock
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 660px
+    height: 650px
+    .roller-clock-section
+      position: relative
+      .roller-clock-detail
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        height: 300px
+        width: 300px
+        .roller-clock-status
+          font-size: 36px
+          text-shadow: 0px 0px 6px #fff, 0px 0px 6px #fff, 0px 0px 6px #fff, 0px 0px 6px #fff
+        .roller-clock-time
+          height: 150px
+          border-radius: 4px
+          font-size: 86px
+          line-height: 150px
+  .roller-top
+    .roller-count-down
+      position: relative
+      width: 724px
+      height: calc(768px - 650px)
+      .roller-title
+        padding: 0 60px
+      .roller-count-down-btn
+        position: relative
+        z-index: 1
+        width: 166px
+        height: 62px
+        margin-right: 78px
+        background: transparent
+        border: none
+        border-radius: 4px
+        &:focus
+          outline: none
+        span
+          line-height: 62px
+          vertical-align: top
+          color: #fff
+          font-size: 48px
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        bottom: 0
+        right: 512px
+        border-right: 34px solid rgba(0, 0, 0, 0.2)
+        border-bottom: 58px solid transparent
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 512px
+        height: 58px
+        background-color: rgba(0, 0, 0, 0.2)
+    .roller-now
+      width: calc(1024px - 724px)
+      height: 384px
+      .roller-now-card
+        width: 264px
+        height: 360px
+        margin-top: 24px
+        border-radius: 10px
+        .roller-now-job
+          position: relative
+          line-height: 96px
+          font-size: 24px
+          text-align: left
+          padding-left: 26px
+          margin: 0
+          &:before
+            content: ""
+            display: block
+            position: absolute
+            bottom: 20px
+            right: 0
+            width: 166px
+            height: 2px
+            background-color: #fff
+        .roller-now-time
+          list-style: none
+          margin: 0
+          padding: 20px 0 0 0
+          li
+            padding-bottom: 16px
+            .roller-now-progress
+              margin: 6px 0 0 0
+              border-radius: 0 4px 4px 0
+              width: 100px
+              height: 10px
+              background-color: #fff
+            span
+              padding-left: 20px
+              font-size: 14px
+        .roller-now-percent
+          position: relative
+          text-align: left
+          padding: 4px 0 16px 26px
+          &:before
+            content: ""
+            display: block
+            position: absolute
+            bottom: 0
+            left: 0
+            border-top: 34px solid transparent
+            border-left: 233px solid rgba(0, 0, 0, 0.2)
+            border-bottom: 34px solid transparent
+          .roller-now-perform
+            position: relative
+            font-size: 60px
+            margin: 0
+            z-index: 1
+            span
+              font-size: 18px
+              padding-left: 20px
+  .roller-bottom
+    .roller-next
+      width: calc(1024px - 660px)
+      height: calc(768px - 384px)
+      background: linear-gradient(313.4deg, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 50%)
+      .roller-title
+        text-align: right
+        padding: 80px 36px 0 0
+      .roller-todo-list
+        padding-top: 26px
+        list-style: none
+        li
+          position: relative
+          width: 60%
+          margin-left: calc(40% - 36px)
+          text-align: right
+          padding: 10px 20px
+          line-height: 1rem
+          border-radius: 4px
+          transform-origin: top right
+          p
+            font-size: 18px
+            margin: 0
+            text-align: left
+            line-height: 1.5rem
+          span
+            font-size: 12px
+            vertical-align: top
+          &:nth-child(1)
+            background-color: rgba(0, 0, 0, 0.8)
+            z-index: 3
+            transform: scale(1.2)
+          &:nth-child(2)
+            background-color: rgba(0, 0, 0, 0.7)
+            z-index: 2
+            transform: scale(1.1) translateX(-27%)
+          &:nth-child(3)
+            background-color: rgba(0, 0, 0, 0.6)
+            z-index: 1
+            transform: translateX(-58%)
